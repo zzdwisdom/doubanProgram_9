@@ -7,7 +7,9 @@
 //
 
 #import "doubanAppDelegate.h"
-
+#import "doubanProgramViewController.h"
+#import "doubanTrendsViewController.h"
+#import "doubanSettingViewController.h"
 @implementation doubanAppDelegate
 
 - (void)dealloc
@@ -21,6 +23,43 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    //tabBar.viewControllers:
+    
+    //豆瓣应用
+    doubanProgramViewController *MainVC = [[doubanProgramViewController alloc]init];
+    MainVC.title = @"豆瓣应用";
+    UINavigationController *MainNC = [[UINavigationController alloc]initWithRootViewController:MainVC];
+    MainNC.title = @"豆瓣应用";
+    
+    //动态
+    doubanTrendsViewController *TrendsVC = [[doubanTrendsViewController alloc]init];
+    TrendsVC.title = @"动态";
+    UINavigationController *TrendsNC = [[UINavigationController alloc]initWithRootViewController:TrendsVC];
+    TrendsNC.title = @"动态";
+    
+    //设置
+    doubanSettingViewController *SetVC = [[doubanSettingViewController alloc]init];
+    SetVC.title = @"设置";
+    UINavigationController *SetNC = [[UINavigationController alloc]initWithRootViewController:SetVC];
+    SetNC.title = @"设置";
+    
+    UITabBarController *TabBarVC = [[UITabBarController alloc]init];
+    TabBarVC.viewControllers = @[MainNC,TrendsNC,SetNC];
+    self.window.rootViewController = TabBarVC;
+    
+    //内存管理
+    [MainVC release],MainVC = nil;
+    [MainNC release],MainNC = nil;
+    
+    [TrendsVC release],TrendsVC = nil;
+    [TrendsNC release],TrendsNC = nil;
+    
+    [SetVC release],SetVC = nil;
+    [SetNC release],SetNC = nil;
+    
+    [TabBarVC release],TabBarVC = nil;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

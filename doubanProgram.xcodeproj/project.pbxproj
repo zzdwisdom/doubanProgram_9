@@ -16,6 +16,12 @@
 		67C31BF31726A94100113E92 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C31BF21726A94100113E92 /* Default.png */; };
 		67C31BF51726A94100113E92 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C31BF41726A94100113E92 /* Default@2x.png */; };
 		67C31BF71726A94100113E92 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67C31BF61726A94100113E92 /* Default-568h@2x.png */; };
+		67C31BFF1726A97300113E92 /* doubanProgramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31BFE1726A97300113E92 /* doubanProgramViewController.m */; };
+		67C31C071726AC7D00113E92 /* doubanSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C061726AC7D00113E92 /* doubanSettingViewController.m */; };
+		67C31C0C1726AE5200113E92 /* doubanTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C0B1726AE5200113E92 /* doubanTrendsViewController.m */; };
+		67C31C121726AF6500113E92 /* doubanMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C111726AF6500113E92 /* doubanMusicViewController.m */; };
+		67C31C151726AF6E00113E92 /* doubanMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C141726AF6E00113E92 /* doubanMovieViewController.m */; };
+		67C31C181726AF7900113E92 /* doubanActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C171726AF7900113E92 /* doubanActivityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,18 @@
 		67C31BF21726A94100113E92 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		67C31BF41726A94100113E92 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		67C31BF61726A94100113E92 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		67C31BFD1726A97300113E92 /* doubanProgramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanProgramViewController.h; sourceTree = "<group>"; };
+		67C31BFE1726A97300113E92 /* doubanProgramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanProgramViewController.m; sourceTree = "<group>"; };
+		67C31C051726AC7D00113E92 /* doubanSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanSettingViewController.h; sourceTree = "<group>"; };
+		67C31C061726AC7D00113E92 /* doubanSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanSettingViewController.m; sourceTree = "<group>"; };
+		67C31C0A1726AE5200113E92 /* doubanTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanTrendsViewController.h; sourceTree = "<group>"; };
+		67C31C0B1726AE5200113E92 /* doubanTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanTrendsViewController.m; sourceTree = "<group>"; };
+		67C31C101726AF6500113E92 /* doubanMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanMusicViewController.h; sourceTree = "<group>"; };
+		67C31C111726AF6500113E92 /* doubanMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanMusicViewController.m; sourceTree = "<group>"; };
+		67C31C131726AF6E00113E92 /* doubanMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanMovieViewController.h; sourceTree = "<group>"; };
+		67C31C141726AF6E00113E92 /* doubanMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanMovieViewController.m; sourceTree = "<group>"; };
+		67C31C161726AF7900113E92 /* doubanActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanActivityViewController.h; sourceTree = "<group>"; };
+		67C31C171726AF7900113E92 /* doubanActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanActivityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +96,10 @@
 		67C31BE61726A94100113E92 /* doubanProgram */ = {
 			isa = PBXGroup;
 			children = (
-				67C31BEF1726A94100113E92 /* doubanAppDelegate.h */,
-				67C31BF01726A94100113E92 /* doubanAppDelegate.m */,
+				67C31C001726AA7800113E92 /* Program  豆瓣应用 */,
+				67C31C091726AE0800113E92 /* Trends    动态 */,
+				67C31C011726AA8500113E92 /* Setting    设置 */,
+				67C31C081726AD5A00113E92 /* AppDelegate */,
 				67C31BE71726A94100113E92 /* Supporting Files */,
 			);
 			path = doubanProgram;
@@ -97,6 +117,72 @@
 				67C31BF61726A94100113E92 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67C31C001726AA7800113E92 /* Program  豆瓣应用 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31BFD1726A97300113E92 /* doubanProgramViewController.h */,
+				67C31BFE1726A97300113E92 /* doubanProgramViewController.m */,
+				67C31C0D1726AF3500113E92 /* Music    程序入口 */,
+				67C31C0E1726AF3F00113E92 /* Movie    程序入口 */,
+				67C31C0F1726AF4600113E92 /* Activity  程序入口 */,
+			);
+			name = "Program  豆瓣应用";
+			sourceTree = "<group>";
+		};
+		67C31C011726AA8500113E92 /* Setting    设置 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31C051726AC7D00113E92 /* doubanSettingViewController.h */,
+				67C31C061726AC7D00113E92 /* doubanSettingViewController.m */,
+			);
+			name = "Setting    设置";
+			sourceTree = "<group>";
+		};
+		67C31C081726AD5A00113E92 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				67C31BEF1726A94100113E92 /* doubanAppDelegate.h */,
+				67C31BF01726A94100113E92 /* doubanAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		67C31C091726AE0800113E92 /* Trends    动态 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31C0A1726AE5200113E92 /* doubanTrendsViewController.h */,
+				67C31C0B1726AE5200113E92 /* doubanTrendsViewController.m */,
+			);
+			name = "Trends    动态";
+			sourceTree = "<group>";
+		};
+		67C31C0D1726AF3500113E92 /* Music    程序入口 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31C101726AF6500113E92 /* doubanMusicViewController.h */,
+				67C31C111726AF6500113E92 /* doubanMusicViewController.m */,
+			);
+			name = "Music    程序入口";
+			sourceTree = "<group>";
+		};
+		67C31C0E1726AF3F00113E92 /* Movie    程序入口 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31C131726AF6E00113E92 /* doubanMovieViewController.h */,
+				67C31C141726AF6E00113E92 /* doubanMovieViewController.m */,
+			);
+			name = "Movie    程序入口";
+			sourceTree = "<group>";
+		};
+		67C31C0F1726AF4600113E92 /* Activity  程序入口 */ = {
+			isa = PBXGroup;
+			children = (
+				67C31C161726AF7900113E92 /* doubanActivityViewController.h */,
+				67C31C171726AF7900113E92 /* doubanActivityViewController.m */,
+			);
+			name = "Activity  程序入口";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +253,12 @@
 			files = (
 				67C31BED1726A94100113E92 /* main.m in Sources */,
 				67C31BF11726A94100113E92 /* doubanAppDelegate.m in Sources */,
+				67C31BFF1726A97300113E92 /* doubanProgramViewController.m in Sources */,
+				67C31C071726AC7D00113E92 /* doubanSettingViewController.m in Sources */,
+				67C31C0C1726AE5200113E92 /* doubanTrendsViewController.m in Sources */,
+				67C31C121726AF6500113E92 /* doubanMusicViewController.m in Sources */,
+				67C31C151726AF6E00113E92 /* doubanMovieViewController.m in Sources */,
+				67C31C181726AF7900113E92 /* doubanActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +373,7 @@
 				67C31BFC1726A94100113E92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
