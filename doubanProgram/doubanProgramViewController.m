@@ -8,6 +8,8 @@
 
 #import "doubanProgramViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 //子应用
 #import "doubanMusicViewController.h"
 #import "doubanMovieViewController.h"
@@ -34,9 +36,7 @@
     
     //转动的箭头 按钮
     UIButton *sjxButton;
-    
-    //返回 豆瓣应用 按钮
-    UIBarButtonItem *backToDouBanBarButton;
+
     //三个应用的视图
     UIView *musicView;
     UIView *movieView;
@@ -52,6 +52,13 @@
     UIView *musInfView;
     UIView *movInfView;
     UIView *actInfView;
+    
+    UIButton * titleOfInfView;
+    UIButton * backBarButton;
+
+    
+    
+    
 }
 
 @end
@@ -61,9 +68,7 @@
 - (void)dealloc
 {
     [selectView release];
-    
-    [backToDouBanBarButton release];
-    
+        
     [musicView release];
     
     [movieView release];
@@ -78,6 +83,7 @@
     
     [actInfView release];
     
+
     
     
     [super dealloc];
@@ -93,28 +99,55 @@
         
         
         _isAppear = NO;
-                
+        
+        //-->titleView
         navButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [navButton setBackgroundColor:[UIColor clearColor]];
-        [navButton setFrame:CGRectMake(0, 0, 180, 44)];
+        [navButton setFrame:CGRectMake(0, 0, 140, 44)];
         [navButton setTitle:@"豆瓣应用" forState:UIControlStateNormal];
         [navButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-        [navButton addTarget:self action:@selector(whichDetailInfDoYouWant:) forControlEvents:UIControlEventTouchUpInside];
+        [navButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.titleView = navButton;
         
         sjxButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [sjxButton setFrame:CGRectMake(120, 0, 44, 44)];
+        [sjxButton setFrame:CGRectMake(108, 10, 22, 22)];
+        sjxButton.backgroundColor = [UIColor clearColor];
         [sjxButton setTitle:@"⬇" forState:UIControlStateNormal];
         [navButton addSubview:sjxButton];
+        //<--
         
-        backToDouBanBarButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(everyBodyGoBack)];
-        
-        self.navigationItem.rightBarButtonItem = backToDouBanBarButton;
-        
-        self.navigationItem.rightBarButtonItem = nil;
-        
-        
+        //-->leftBarButtonItem
+        backBarButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        backBarButton.frame = CGRectMake(220, 3, 70, 38);
+        backBarButton.layer.borderWidth = 1.5;
+        backBarButton.layer.cornerRadius = 4;
+        backBarButton.layer.borderColor = [[UIColor grayColor] CGColor];
+        [backBarButton setTitle:@"返回" forState:UIControlStateNormal];
+        [backBarButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [backBarButton addTarget:self action:@selector(everyBodyGoBack) forControlEvents:UIControlEventTouchUpInside];
+        [backBarButton setHidden:YES];
+        [backBarButton setShowsTouchWhenHighlighted:YES];
 
+        UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backBarButton];
+        self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+        [leftBarButtonItem release],leftBarButtonItem = nil;
+        //<--
+        
+        //-->rightBarButtonItem
+        titleOfInfView = [UIButton buttonWithType:UIButtonTypeCustom];
+        titleOfInfView.frame = CGRectMake(0, 3, 70, 38);
+        titleOfInfView.layer.borderWidth = 1.5;
+        titleOfInfView.layer.cornerRadius = 4;
+        titleOfInfView.layer.borderColor = [[UIColor grayColor] CGColor];
+        [titleOfInfView setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        [titleOfInfView setHidden:YES];
+        [titleOfInfView setShowsTouchWhenHighlighted:YES];
+        
+        UIBarButtonItem * rightBarButton = [[UIBarButtonItem alloc]initWithCustomView:titleOfInfView];
+        self.navigationItem.rightBarButtonItem = rightBarButton;
+        [rightBarButton release],rightBarButton = nil;
+        //<--
+        
 
     }
     return self;
@@ -127,7 +160,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
     
     [self creatAllDetailInfViewOfDouBan];
     
@@ -326,7 +358,7 @@
 }
 
 
-#pragma mark - 创建 豆瓣应用详细信息的 选择器
+#pragma mark - 创建 豆瓣应用 选择器
 - (void)creatSelectorOfDouBanDetailInf
 {
     selectView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 140, 132)];
@@ -338,19 +370,19 @@
     [musButton setFrame:CGRectMake(0, 0, 140, 44)];
     [musButton setTitle:@"音乐" forState:UIControlStateNormal];
     [musButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [musButton addTarget:self action:@selector(whichDetailInfDoYouWant:) forControlEvents:UIControlEventTouchUpInside];
+    [musButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     
     movButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [movButton setFrame:CGRectMake(0, 44, 140, 44)];
     [movButton setTitle:@"电影" forState:UIControlStateNormal];
     [movButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [movButton addTarget:self action:@selector(whichDetailInfDoYouWant:) forControlEvents:UIControlEventTouchUpInside];
+    [movButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     
     actButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [actButton setFrame:CGRectMake(0, 88, 140, 44)];
     [actButton setTitle:@"活动" forState:UIControlStateNormal];
     [actButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [actButton addTarget:self action:@selector(whichDetailInfDoYouWant:) forControlEvents:UIControlEventTouchUpInside];
+    [actButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [navButton setShowsTouchWhenHighlighted:YES];
     [musButton setShowsTouchWhenHighlighted:YES];
@@ -423,23 +455,37 @@
     
 }
 
+
 #pragma mark - 你想看谁的更多信息 ? 通过点击它的按钮
 - (void)whoseInfDoYouWantSomeMore:(UIButton *)someButton
 {
     if ([someButton.superview isEqual:musInfView])
     {
+
+        [titleOfInfView setTitle:@"音乐" forState:UIControlStateNormal];
+
         [self whoIsGoingOut:musInfView whoHasClicked:nil];
+        
     }
     
     if ([someButton.superview isEqual:movInfView])
     {
+        [titleOfInfView setTitle:@"电影" forState:UIControlStateNormal];
+
+
         [self whoIsGoingOut:movInfView whoHasClicked:nil];
+        
     }
     
     if ([someButton.superview isEqual:actInfView])
     {
+        
+        [titleOfInfView setTitle:@"活动" forState:UIControlStateNormal];
+
         [self whoIsGoingOut:actInfView whoHasClicked:nil];
+        
     }
+    
 }
 
 
@@ -448,6 +494,7 @@
 {
     
     [UIView animateWithDuration:1.0 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+
         
         if ([someBody isEqual:musInfView] || [someButton isEqual:musButton])
         {
@@ -461,6 +508,8 @@
             musicView.alpha = 1;
             movieView.alpha = 0;
             activityView.alpha = 0;
+            
+            
         }
         
         if ([someBody isEqual:movInfView] || [someButton isEqual:movButton])
@@ -489,12 +538,23 @@
             musicView.alpha = 0;
             movieView.alpha = 0;
             activityView.alpha = 1;
+            
+            
         }
+        
+
         
   
     } completion:^(BOOL finished) {
         
-        self.navigationItem.rightBarButtonItem = backToDouBanBarButton;
+        
+        
+        [titleOfInfView setHidden:NO];
+        
+
+        [backBarButton setHidden:NO];
+
+
         
     }];
 
@@ -505,6 +565,8 @@
 #pragma mark - 返回 所有信息 视图
 - (void)everyBodyGoBack
 {
+
+    
     NSLog(@"全部归位");
     [UIView animateWithDuration:1.0 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
             
@@ -514,10 +576,20 @@
         musInfView.frame = CGRectMake(0, 0, 320, 150);
         movInfView.frame = CGRectMake(0, 150 + 2, 320, 150);
         actInfView.frame = CGRectMake(0, 300 + 4, 320, 150);
+        
+
+
             
     } completion:^(BOOL finished) {
         
-        self.navigationItem.rightBarButtonItem = nil;
+        [navButton setTitle:@"豆瓣应用" forState:UIControlStateNormal];
+
+        [titleOfInfView setHidden:YES];
+
+        [backBarButton setHidden:YES];
+        
+        
+
         
         
     }];
@@ -530,7 +602,47 @@
 #pragma mark - 进入用户选择的应用程序界面
 - (void)iWantToRunTheProgramByThisButton:(UIButton *)someButton
 {
-    if ([someButton.superview isEqual:musicView])
+    
+    if ([someButton.superview isEqual:selectView] ||
+        [someButton.superview isEqual:self.navigationController.navigationBar])
+    {
+        [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            
+            if (_isAppear == NO)
+            {
+                
+                sjxButton.transform = CGAffineTransformMakeRotation( 180 * M_PI  / 180);
+                
+                selectView.center = CGPointMake(160, 66);
+                
+                _isAppear = YES;
+                
+                return;
+            }
+            
+            if (_isAppear == YES)
+            {
+                
+                
+                
+                sjxButton.transform = CGAffineTransformMakeRotation( 360 * M_PI  / 180);
+                
+                
+                selectView.center = CGPointMake(160, -66);
+                
+                _isAppear = NO;
+                
+                return;
+            }
+            
+        } completion:^(BOOL finished) {
+            
+        }];
+
+    }
+    
+    
+    if ([someButton.superview isEqual:musicView] || [someButton isEqual:musButton])
     {
         doubanMusicViewController *MusVC = [[doubanMusicViewController alloc]init];
         [self.navigationController pushViewController:MusVC animated:YES];
@@ -539,7 +651,7 @@
         [MusVC release],MusVC = nil;
     }
     
-    if ([someButton.superview isEqual:movieView])
+    if ([someButton.superview isEqual:movieView] || [someButton isEqual:movButton])
     {
         doubanMovieViewController *MovVC = [[doubanMovieViewController alloc]init];
         [self.navigationController pushViewController:MovVC animated:YES];
@@ -549,7 +661,7 @@
         
     }
     
-    if ([someButton.superview isEqual:activityView])
+    if ([someButton.superview isEqual:activityView] || [someButton isEqual:actButton])
     {
         doubanActivityViewController *ActVC = [[doubanActivityViewController alloc]init];
         [self.navigationController pushViewController:ActVC animated:YES];
@@ -558,6 +670,8 @@
         [ActVC release],ActVC = nil;
         
     }
+
+    
     
 }
 
