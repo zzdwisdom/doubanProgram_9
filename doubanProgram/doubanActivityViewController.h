@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface doubanActivityViewController : UIViewController
+@interface doubanActivityViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
