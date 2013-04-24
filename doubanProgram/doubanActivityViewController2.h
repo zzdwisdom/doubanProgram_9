@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface doubanActivityViewController2 : UIViewController
+@interface doubanActivityViewController2 : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (nonatomic, retain) Online *online;
 
 @end

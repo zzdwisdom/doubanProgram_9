@@ -7,9 +7,6 @@
 //
 
 #import "doubanActivityViewController.h"
-#import "Online.h"
-#import "JSON.h"
-#import "doubanActivityViewController.h"
 
 @interface doubanActivityViewController ()
 
