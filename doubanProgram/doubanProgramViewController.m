@@ -157,6 +157,7 @@
     [navButton setFrame:CGRectMake(0, 0, 140, 44)];
     [navButton setTitle:@"豆瓣应用" forState:UIControlStateNormal];
     [navButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+    [navButton setShowsTouchWhenHighlighted:YES];
     [navButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = navButton;
     
@@ -404,7 +405,6 @@
     [actButton setTitleColor:activTextColor forState:UIControlStateNormal];
     [actButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     
-    [navButton setShowsTouchWhenHighlighted:YES];
     [musButton setShowsTouchWhenHighlighted:YES];
     [movButton setShowsTouchWhenHighlighted:YES];
     [actButton setShowsTouchWhenHighlighted:YES];
