@@ -24,10 +24,13 @@
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [titleButton setBackgroundColor:[UIColor clearColor]];
         [titleButton setFrame:CGRectMake(0, 0, 180, 44)];
-        [titleButton setTitle:@"音乐" forState:UIControlStateNormal];
+        [titleButton setTitle:@"音乐 🎵" forState:UIControlStateNormal];
         [titleButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [titleButton setShowsTouchWhenHighlighted:YES];
         self.navigationItem.titleView = titleButton;
+        
+
+        
     }
     return self;
 }
@@ -36,6 +39,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning

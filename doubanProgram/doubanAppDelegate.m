@@ -24,6 +24,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
+    /*
+     隐藏
+    [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+     */
+    
+    [application setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
+    
     //tabBar.viewControllers:
     
     //豆瓣应用
