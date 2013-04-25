@@ -56,6 +56,7 @@
     UIButton * titleOfInfView;
     UIButton * backBarButton;
 
+    //设置颜色标准
     UIColor *musicTextColor;
     UIColor *movieTextColor;
     UIColor *activTextColor;
