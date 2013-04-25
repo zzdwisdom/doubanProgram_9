@@ -215,7 +215,6 @@
 #pragma mark - 音乐信息入口 （详细）
 - (void)musicDetailInfAPI
 {
-    NSLog(@"添加音乐详细信息,暂用pushMusVCButton填充");
     musicView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
     [self.view addSubview:musicView];
     
@@ -240,7 +239,6 @@
 #pragma mark - 电影信息入口 （详细）
 - (void)movieDetailInfAPI
 {
-    NSLog(@"添加音乐详细信息,暂用pushMovVCButton填充");
     movieView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 400)];
     [self.view addSubview:movieView];
     
@@ -264,7 +262,6 @@
 #pragma mark - 活动信息入口 （详细）
 - (void)activityDetailAPI
 {
-    NSLog(@"添加音乐详细信息,暂用pushActVCButton填充");
     activityView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 400)];
     [self.view addSubview:activityView];
     
@@ -304,7 +301,6 @@
 #pragma mark - 音乐信息入口 （简要）
 - (void)musicConciseInfAPI
 {
-    NSLog(@"添加音乐简要信息,暂用redColor填充");
     musInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 150)];
     musInfView.backgroundColor = [UIColor whiteColor];
     [allInfView addSubview:musInfView];
@@ -329,7 +325,6 @@
 #pragma mark - 电影信息入口 （简要）
 - (void)movieConciseInfAPI
 {
-    NSLog(@"添加电影简要信息,暂用greenColor填充");
     movInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 150 + 2, 320, 150)];
     movInfView.backgroundColor = [UIColor whiteColor];
     [allInfView addSubview:movInfView];
@@ -355,7 +350,6 @@
 #pragma mark - 活动信息入口 （简要）
 - (void)activityConciseInfAPI
 {
-    NSLog(@"添加活动简要信息,暂用blueColor填充");
     actInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 300 + 4, 320, 150)];
     actInfView.backgroundColor = [UIColor whiteColor];
     [allInfView addSubview:actInfView];

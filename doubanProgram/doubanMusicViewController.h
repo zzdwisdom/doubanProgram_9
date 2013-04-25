@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface doubanMusicViewController : UIViewController
+@interface doubanMusicViewController : UIViewController<NSURLConnectionDataDelegate>
 
 @end
