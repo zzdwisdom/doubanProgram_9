@@ -63,8 +63,6 @@
     UIColor *navgttintColor;
     
     UIColor *barButtonBorderColor;
-    
-    
 }
 
 @end
@@ -302,7 +300,7 @@
 - (void)musicConciseInfAPI
 {
     musInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 150)];
-    musInfView.backgroundColor = [UIColor whiteColor];
+    musInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubanyinyue"]];
     [allInfView addSubview:musInfView];
     
     //简要音乐信息代码区
@@ -315,7 +313,7 @@
     //更多按钮 需要放在最顶层
     moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [moreButton setFrame:CGRectMake(235, 115, 80, 30)];
-    [moreButton setBackgroundColor:[UIColor brownColor]];
+    [moreButton setBackgroundColor:[UIColor clearColor]];
     [moreButton setTitle:@"More..." forState:UIControlStateNormal];
     [moreButton addTarget:self action:@selector(whichViewMoreButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [moreButton setShowsTouchWhenHighlighted:YES];
@@ -326,7 +324,7 @@
 - (void)movieConciseInfAPI
 {
     movInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 150 + 2, 320, 150)];
-    movInfView.backgroundColor = [UIColor whiteColor];
+    movInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubandianying"]];
     [allInfView addSubview:movInfView];
     
     //简要电影信息代码区
@@ -339,7 +337,7 @@
     //更多按钮 需要放在最顶层
     moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [moreButton setFrame:CGRectMake(235, 115, 80, 30)];
-    [moreButton setBackgroundColor:[UIColor brownColor]];
+    [moreButton setBackgroundColor:[UIColor clearColor]];
     [moreButton setTitle:@"More..." forState:UIControlStateNormal];
     [moreButton addTarget:self action:@selector(whichViewMoreButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [moreButton setShowsTouchWhenHighlighted:YES];
@@ -351,7 +349,7 @@
 - (void)activityConciseInfAPI
 {
     actInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 300 + 4, 320, 150)];
-    actInfView.backgroundColor = [UIColor whiteColor];
+    actInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubanhuodong.png"]];
     [allInfView addSubview:actInfView];
     
     //简要活动信息代码区
@@ -364,7 +362,7 @@
     //更多按钮 需要放在最顶层
     moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [moreButton setFrame:CGRectMake(235, 115, 80, 30)];
-    [moreButton setBackgroundColor:[UIColor brownColor]];
+    [moreButton setBackgroundColor:[UIColor clearColor]];
     [moreButton setTitle:@"More..." forState:UIControlStateNormal];
     [moreButton addTarget:self action:@selector(whichViewMoreButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [moreButton setShowsTouchWhenHighlighted:YES];

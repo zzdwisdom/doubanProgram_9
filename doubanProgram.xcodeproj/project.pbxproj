@@ -44,10 +44,13 @@
 		67FFD1F31728D55F0076735B /* selectView_bg_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 67FFD1EE1728D55F0076735B /* selectView_bg_blue.png */; };
 		67FFD1F41728D55F0076735B /* selectView_bg_pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 67FFD1EF1728D55F0076735B /* selectView_bg_pink.png */; };
 		6F51B95F17278568009B9288 /* Online.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F51B95E17278568009B9288 /* Online.m */; };
-		6F51B976172787C8009B9288 /* doubanActivityViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F51B975172787C8009B9288 /* doubanActivityViewController2.m */; };
 		6F51B978172787F3009B9288 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F51B977172787F3009B9288 /* ImageIO.framework */; };
 		6F51B97A172787F9009B9288 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F51B979172787F9009B9288 /* CoreImage.framework */; };
 		6F51B97C172787FE009B9288 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F51B97B172787FE009B9288 /* MapKit.framework */; };
+		6F986EDD172A264A003DBFAE /* doubanActivityViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F986EDC172A264A003DBFAE /* doubanActivityViewController2.m */; };
+		6F986EE3172A7CBD003DBFAE /* doubanyinyue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */; };
+		6F986EE5172A7DAB003DBFAE /* doubanhuodong.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F986EE4172A7DAB003DBFAE /* doubanhuodong.png */; };
+		6F986EE7172A7E1B003DBFAE /* doubandianying.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F986EE6172A7E1B003DBFAE /* doubandianying.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,11 +120,14 @@
 		67FFD1EF1728D55F0076735B /* selectView_bg_pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectView_bg_pink.png; sourceTree = "<group>"; };
 		6F51B95D17278568009B9288 /* Online.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Online.h; sourceTree = "<group>"; };
 		6F51B95E17278568009B9288 /* Online.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Online.m; sourceTree = "<group>"; };
-		6F51B974172787C8009B9288 /* doubanActivityViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanActivityViewController2.h; sourceTree = "<group>"; };
-		6F51B975172787C8009B9288 /* doubanActivityViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanActivityViewController2.m; sourceTree = "<group>"; };
 		6F51B977172787F3009B9288 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6F51B979172787F9009B9288 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		6F51B97B172787FE009B9288 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6F986EDB172A264A003DBFAE /* doubanActivityViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanActivityViewController2.h; sourceTree = "<group>"; };
+		6F986EDC172A264A003DBFAE /* doubanActivityViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanActivityViewController2.m; sourceTree = "<group>"; };
+		6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubanyinyue.png; sourceTree = "<group>"; };
+		6F986EE4172A7DAB003DBFAE /* doubanhuodong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubanhuodong.png; sourceTree = "<group>"; };
+		6F986EE6172A7E1B003DBFAE /* doubandianying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubandianying.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				67FFD1E71728D55F0076735B /* images */,
-				67FFD1C71728D4890076735B /* UIImageKIT */,
 				67FFD1B31728D47B0076735B /* JSON */,
 				67C31C001726AA7800113E92 /* Program  豆瓣应用 */,
 				67C31C091726AE0800113E92 /* Trends    动态 */,
@@ -264,8 +269,8 @@
 				6F51B95E17278568009B9288 /* Online.m */,
 				67C31C161726AF7900113E92 /* doubanActivityViewController.h */,
 				67C31C171726AF7900113E92 /* doubanActivityViewController.m */,
-				6F51B974172787C8009B9288 /* doubanActivityViewController2.h */,
-				6F51B975172787C8009B9288 /* doubanActivityViewController2.m */,
+				6F986EDB172A264A003DBFAE /* doubanActivityViewController2.h */,
+				6F986EDC172A264A003DBFAE /* doubanActivityViewController2.m */,
 			);
 			name = "Activity  程序入口";
 			sourceTree = "<group>";
@@ -315,12 +320,16 @@
 				67FFD1DB1728D4890076735B /* UIImageView+WebCache.h */,
 				67FFD1DC1728D4890076735B /* UIImageView+WebCache.m */,
 			);
-			path = UIImageKIT;
+			name = UIImageKIT;
+			path = ../../UIImageKIT;
 			sourceTree = "<group>";
 		};
 		67FFD1E71728D55F0076735B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */,
+				6F986EE6172A7E1B003DBFAE /* doubandianying.png */,
+				6F986EE4172A7DAB003DBFAE /* doubanhuodong.png */,
 				67FFD1E81728D55F0076735B /* activityImages */,
 				67FFD1E91728D55F0076735B /* movieImages */,
 				67FFD1EA1728D55F0076735B /* musicImages */,
@@ -345,6 +354,7 @@
 		67FFD1EA1728D55F0076735B /* musicImages */ = {
 			isa = PBXGroup;
 			children = (
+				67FFD1C71728D4890076735B /* UIImageKIT */,
 				67FFD1EB1728D55F0076735B /* backButton_pink.png */,
 				67FFD1EC1728D55F0076735B /* nav_bg_blue.png */,
 				67FFD1ED1728D55F0076735B /* nav_bg_pink.png */,
@@ -415,6 +425,9 @@
 				67FFD1F21728D55F0076735B /* nav_bg_pink.png in Resources */,
 				67FFD1F31728D55F0076735B /* selectView_bg_blue.png in Resources */,
 				67FFD1F41728D55F0076735B /* selectView_bg_pink.png in Resources */,
+				6F986EE3172A7CBD003DBFAE /* doubanyinyue.png in Resources */,
+				6F986EE5172A7DAB003DBFAE /* doubanhuodong.png in Resources */,
+				6F986EE7172A7E1B003DBFAE /* doubandianying.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +447,6 @@
 				67C31C151726AF6E00113E92 /* doubanMovieViewController.m in Sources */,
 				67C31C181726AF7900113E92 /* doubanActivityViewController.m in Sources */,
 				6F51B95F17278568009B9288 /* Online.m in Sources */,
-				6F51B976172787C8009B9288 /* doubanActivityViewController2.m in Sources */,
 				67FFD1C11728D47B0076735B /* NSObject+SBJSON.m in Sources */,
 				67FFD1C21728D47B0076735B /* NSString+SBJSON.m in Sources */,
 				67FFD1C31728D47B0076735B /* SBJSON.m in Sources */,
@@ -451,6 +463,7 @@
 				67FFD1E41728D4890076735B /* SDWebImagePrefetcher.m in Sources */,
 				67FFD1E51728D4890076735B /* UIButton+WebCache.m in Sources */,
 				67FFD1E61728D4890076735B /* UIImageView+WebCache.m in Sources */,
+				6F986EDD172A264A003DBFAE /* doubanActivityViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

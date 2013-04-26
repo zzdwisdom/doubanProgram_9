@@ -7,6 +7,7 @@
 //
 
 #import "doubanActivityViewController.h"
+#import "doubanActivityViewController2.h"
 
 @interface doubanActivityViewController ()
 
@@ -81,9 +82,11 @@
         online.onlineId = [dic objectForKey:@"album_id"];
         online.onlineDesc = [dic objectForKey:@"desc"];
         online.onlineURLString= [dic objectForKey:@"cover"];
+        online.onlineOwner = [[dic objectForKey:@"owner"] objectForKey:@"name"];
         NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:online.onlineURLString]];
         online.onlineImage = [UIImage imageWithData:imageData];
         
+        self.online= online;
         self.onlines = onlines;
         [self.onlines addObject:online];
         NSLog(@"%@",online);
@@ -127,13 +130,14 @@
     return 80.0;
 }
 
-//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    activeViewController2 *two = [[activeViewController2 alloc] init];
-//    
-//    [self.navigationController pushViewController:two animated:YES];
-//}
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    doubanActivityViewController2 *two = [[doubanActivityViewController2 alloc] init];
+    [self.navigationController pushViewController:two animated:YES];
+    
+    two.online = [self.onlines objectAtIndex:indexPath.row];
+}
 
 - (void)didReceiveMemoryWarning
 {
