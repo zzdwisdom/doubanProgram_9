@@ -55,10 +55,6 @@
 {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    activityIndicator.frame = CGRectMake(30.0, 9.0, 80.0, 80.0);
-    activityIndicator.center = self.view.center;
     self.view.backgroundColor = [UIColor whiteColor];
     UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(5.0, 20.0, 310.0, 419.0) style:UITableViewStylePlain];
     table.delegate = self;

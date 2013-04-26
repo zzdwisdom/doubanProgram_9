@@ -225,7 +225,7 @@
     
     //进入音乐程序按钮 可替换成自定义内容
     UIButton *pushMusVCButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    pushMusVCButton.backgroundColor = [UIColor grayColor];
+    pushMusVCButton.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"yinyuebeijing.png"]];
     pushMusVCButton.frame = CGRectMake(0, 0, 320, 454);
     [pushMusVCButton setTitle:@"进入音乐🎵" forState:UIControlStateNormal];
     [pushMusVCButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -249,9 +249,10 @@
     
     //进入电影程序按钮 可替换成自定义内容
     UIButton *pushMovVCButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    pushMovVCButton.backgroundColor = [UIColor greenColor];
+    pushMovVCButton.backgroundColor = [UIColor blueColor];
     pushMovVCButton.frame = CGRectMake(0, 0, 320, 454);
-    [pushMovVCButton setTitle:@"进入电影" forState:UIControlStateNormal];
+    [pushMovVCButton.titleLabel setBackgroundColor:[UIColor purpleColor]];
+    [pushMovVCButton setTitle:@"进入电影🎥" forState:UIControlStateNormal];
     [pushMovVCButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     [pushMovVCButton setShowsTouchWhenHighlighted:YES];
     [movieView addSubview:pushMovVCButton];
@@ -272,9 +273,9 @@
     
     //进入活动程序按钮 可替换成自定义内容
     UIButton *pushActVCButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    pushActVCButton.backgroundColor = [UIColor blueColor];
+    pushActVCButton.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"huodongbeijing.png"]];
     pushActVCButton.frame = CGRectMake(0, 0, 320, 454);
-    [pushActVCButton setTitle:@"进入活动" forState:UIControlStateNormal];
+    [pushActVCButton setTitle:@"进入活动🏄" forState:UIControlStateNormal];
     [pushActVCButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     [pushActVCButton setShowsTouchWhenHighlighted:YES];
     [activityView addSubview:pushActVCButton];
@@ -299,7 +300,7 @@
 #pragma mark - 音乐信息入口 （简要）
 - (void)musicConciseInfAPI
 {
-    musInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 150)];
+    musInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 151)];
     musInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubanyinyue"]];
     [allInfView addSubview:musInfView];
     
@@ -323,7 +324,7 @@
 #pragma mark - 电影信息入口 （简要）
 - (void)movieConciseInfAPI
 {
-    movInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 150 + 2, 320, 150)];
+    movInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 150, 320, 150)];
     movInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubandianying"]];
     [allInfView addSubview:movInfView];
     
@@ -348,7 +349,7 @@
 #pragma mark - 活动信息入口 （简要）
 - (void)activityConciseInfAPI
 {
-    actInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 300 + 4, 320, 150)];
+    actInfView = [[UIView alloc]initWithFrame:CGRectMake(0, 300, 320, 154)];
     actInfView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"doubanhuodong.png"]];
     [allInfView addSubview:actInfView];
     
