@@ -10,6 +10,7 @@
 #import "doubanProgramViewController.h"
 #import "doubanTrendsViewController.h"
 #import "doubanSettingViewController.h"
+#import "doubanMovieViewController.h"
 @implementation doubanAppDelegate
 
 - (void)dealloc
@@ -23,7 +24,9 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    doubanMovieViewController *movie = [[doubanMovieViewController alloc] init];
     
+    [movie release];
     /*
      隐藏
     [application setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];

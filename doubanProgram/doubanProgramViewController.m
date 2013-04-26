@@ -242,16 +242,18 @@
     
     //详细电影信息代码区
     //->
-    
+    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]];
+    image.frame = CGRectMake(0.0, 0.0, 320.0, 460.0);
+    [movieView addSubview:image];
     
     
     //<-
     
     //进入电影程序按钮 可替换成自定义内容
     UIButton *pushMovVCButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    pushMovVCButton.backgroundColor = [UIColor blueColor];
+    pushMovVCButton.backgroundColor = [UIColor clearColor];
     pushMovVCButton.frame = CGRectMake(0, 0, 320, 454);
-    [pushMovVCButton.titleLabel setBackgroundColor:[UIColor purpleColor]];
+    //[pushMovVCButton.titleLabel setBackgroundColor:[UIColor purpleColor]];
     [pushMovVCButton setTitle:@"进入电影🎥" forState:UIControlStateNormal];
     [pushMovVCButton addTarget:self action:@selector(iWantToRunTheProgramByThisButton:) forControlEvents:UIControlEventTouchUpInside];
     [pushMovVCButton setShowsTouchWhenHighlighted:YES];
@@ -339,6 +341,7 @@
     moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [moreButton setFrame:CGRectMake(235, 115, 80, 30)];
     [moreButton setBackgroundColor:[UIColor clearColor]];
+    [moreButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [moreButton setTitle:@"More..." forState:UIControlStateNormal];
     [moreButton addTarget:self action:@selector(whichViewMoreButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [moreButton setShowsTouchWhenHighlighted:YES];

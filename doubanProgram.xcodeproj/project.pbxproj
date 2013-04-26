@@ -20,7 +20,6 @@
 		67C31C071726AC7D00113E92 /* doubanSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C061726AC7D00113E92 /* doubanSettingViewController.m */; };
 		67C31C0C1726AE5200113E92 /* doubanTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C0B1726AE5200113E92 /* doubanTrendsViewController.m */; };
 		67C31C121726AF6500113E92 /* doubanMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C111726AF6500113E92 /* doubanMusicViewController.m */; };
-		67C31C151726AF6E00113E92 /* doubanMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C141726AF6E00113E92 /* doubanMovieViewController.m */; };
 		67C31C181726AF7900113E92 /* doubanActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C31C171726AF7900113E92 /* doubanActivityViewController.m */; };
 		67FFD1C11728D47B0076735B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FFD1B61728D47B0076735B /* NSObject+SBJSON.m */; };
 		67FFD1C21728D47B0076735B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FFD1B81728D47B0076735B /* NSString+SBJSON.m */; };
@@ -55,6 +54,10 @@
 		6F986EDD172A264A003DBFAE /* doubanActivityViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F986EDC172A264A003DBFAE /* doubanActivityViewController2.m */; };
 		6F986EE3172A7CBD003DBFAE /* doubanyinyue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */; };
 		6F986EE7172A7E1B003DBFAE /* doubandianying.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F986EE6172A7E1B003DBFAE /* doubandianying.png */; };
+		6FADFF24172A908200EEEEFE /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FADFF23172A908200EEEEFE /* 2.jpg */; };
+		6FADFF2C172A912A00EEEEFE /* movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FADFF26172A912A00EEEEFE /* movie.m */; };
+		6FADFF2D172A912A00EEEEFE /* doubanMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FADFF29172A912A00EEEEFE /* doubanMovieViewController.m */; };
+		6FADFF2E172A912A00EEEEFE /* doubanplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FADFF2B172A912A00EEEEFE /* doubanplayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,8 +82,6 @@
 		67C31C0B1726AE5200113E92 /* doubanTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanTrendsViewController.m; sourceTree = "<group>"; };
 		67C31C101726AF6500113E92 /* doubanMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanMusicViewController.h; sourceTree = "<group>"; };
 		67C31C111726AF6500113E92 /* doubanMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanMusicViewController.m; sourceTree = "<group>"; };
-		67C31C131726AF6E00113E92 /* doubanMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanMovieViewController.h; sourceTree = "<group>"; };
-		67C31C141726AF6E00113E92 /* doubanMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanMovieViewController.m; sourceTree = "<group>"; };
 		67C31C161726AF7900113E92 /* doubanActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanActivityViewController.h; sourceTree = "<group>"; };
 		67C31C171726AF7900113E92 /* doubanActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanActivityViewController.m; sourceTree = "<group>"; };
 		67FFD1B41728D47B0076735B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -136,6 +137,14 @@
 		6F986EDC172A264A003DBFAE /* doubanActivityViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanActivityViewController2.m; sourceTree = "<group>"; };
 		6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubanyinyue.png; sourceTree = "<group>"; };
 		6F986EE6172A7E1B003DBFAE /* doubandianying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubandianying.png; sourceTree = "<group>"; };
+		6FADFF23172A908200EEEEFE /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		6FADFF25172A912A00EEEEFE /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movie.h; sourceTree = "<group>"; };
+		6FADFF26172A912A00EEEEFE /* movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movie.m; sourceTree = "<group>"; };
+		6FADFF27172A912A00EEEEFE /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		6FADFF28172A912A00EEEEFE /* doubanMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanMovieViewController.h; sourceTree = "<group>"; };
+		6FADFF29172A912A00EEEEFE /* doubanMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanMovieViewController.m; sourceTree = "<group>"; };
+		6FADFF2A172A912A00EEEEFE /* doubanplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubanplayViewController.h; sourceTree = "<group>"; };
+		6FADFF2B172A912A00EEEEFE /* doubanplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubanplayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,8 +273,13 @@
 		67C31C0E1726AF3F00113E92 /* Movie    程序入口 */ = {
 			isa = PBXGroup;
 			children = (
-				67C31C131726AF6E00113E92 /* doubanMovieViewController.h */,
-				67C31C141726AF6E00113E92 /* doubanMovieViewController.m */,
+				6FADFF25172A912A00EEEEFE /* movie.h */,
+				6FADFF26172A912A00EEEEFE /* movie.m */,
+				6FADFF27172A912A00EEEEFE /* Author.h */,
+				6FADFF28172A912A00EEEEFE /* doubanMovieViewController.h */,
+				6FADFF29172A912A00EEEEFE /* doubanMovieViewController.m */,
+				6FADFF2A172A912A00EEEEFE /* doubanplayViewController.h */,
+				6FADFF2B172A912A00EEEEFE /* doubanplayViewController.m */,
 			);
 			name = "Movie    程序入口";
 			sourceTree = "<group>";
@@ -335,6 +349,7 @@
 		67FFD1E71728D55F0076735B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6FADFF23172A908200EEEEFE /* 2.jpg */,
 				6F0B5D42172A8919003B8EA9 /* button.jpg */,
 				6F986EE2172A7CBD003DBFAE /* doubanyinyue.png */,
 				6F986EE6172A7E1B003DBFAE /* doubandianying.png */,
@@ -444,6 +459,7 @@
 				6F0B5D3F172A87EB003B8EA9 /* doubanhuodong.png in Resources */,
 				6F0B5D41172A8829003B8EA9 /* huodongbeijing.PNG in Resources */,
 				6F0B5D43172A8919003B8EA9 /* button.jpg in Resources */,
+				6FADFF24172A908200EEEEFE /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +476,6 @@
 				67C31C071726AC7D00113E92 /* doubanSettingViewController.m in Sources */,
 				67C31C0C1726AE5200113E92 /* doubanTrendsViewController.m in Sources */,
 				67C31C121726AF6500113E92 /* doubanMusicViewController.m in Sources */,
-				67C31C151726AF6E00113E92 /* doubanMovieViewController.m in Sources */,
 				67C31C181726AF7900113E92 /* doubanActivityViewController.m in Sources */,
 				6F51B95F17278568009B9288 /* Online.m in Sources */,
 				67FFD1C11728D47B0076735B /* NSObject+SBJSON.m in Sources */,
@@ -480,6 +495,9 @@
 				67FFD1E51728D4890076735B /* UIButton+WebCache.m in Sources */,
 				67FFD1E61728D4890076735B /* UIImageView+WebCache.m in Sources */,
 				6F986EDD172A264A003DBFAE /* doubanActivityViewController2.m in Sources */,
+				6FADFF2C172A912A00EEEEFE /* movie.m in Sources */,
+				6FADFF2D172A912A00EEEEFE /* doubanMovieViewController.m in Sources */,
+				6FADFF2E172A912A00EEEEFE /* doubanplayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

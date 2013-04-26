@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface doubanMovieViewController : UIViewController
-
+@interface doubanMovieViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>
+@property (nonatomic,retain) UITableView*monieTableView;
 @end
