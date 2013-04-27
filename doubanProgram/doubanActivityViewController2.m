@@ -10,9 +10,6 @@
 #import "doubanActivityViewController.h"
 
 @interface doubanActivityViewController2 ()
-{
-    UIActivityIndicatorView *activityIndicator;
-}
 
 @property (nonatomic, retain) UITableView *tableView;
 
@@ -46,7 +43,6 @@
 -(void)dealloc
 {
     [_online release];
-    [activityIndicator release];
     [_tableView release];
     [super dealloc];
 }
