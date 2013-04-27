@@ -343,7 +343,7 @@
 				67FFD1DC1728D4890076735B /* UIImageView+WebCache.m */,
 			);
 			name = UIImageKIT;
-			path = ../../UIImageKIT;
+			path = ../UIImageKIT;
 			sourceTree = "<group>";
 		};
 		67FFD1E71728D55F0076735B /* images */ = {
@@ -357,6 +357,7 @@
 				6F0B5D38172A864A003B8EA9 /* yinyuebeijing.PNG */,
 				6F0B5D3A172A8693003B8EA9 /* dianyingbeijing.PNG */,
 				6F0B5D40172A8829003B8EA9 /* huodongbeijing.PNG */,
+				67FFD1C71728D4890076735B /* UIImageKIT */,
 				67FFD1E81728D55F0076735B /* activityImages */,
 				67FFD1E91728D55F0076735B /* movieImages */,
 				67FFD1EA1728D55F0076735B /* musicImages */,
@@ -381,7 +382,6 @@
 		67FFD1EA1728D55F0076735B /* musicImages */ = {
 			isa = PBXGroup;
 			children = (
-				67FFD1C71728D4890076735B /* UIImageKIT */,
 				67FFD1EB1728D55F0076735B /* backButton_pink.png */,
 				67FFD1EC1728D55F0076735B /* nav_bg_blue.png */,
 				67FFD1ED1728D55F0076735B /* nav_bg_pink.png */,
